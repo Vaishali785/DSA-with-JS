@@ -1,0 +1,25 @@
+~ Good code is :
+    1. Readable
+    2. Scalable
+
+~ Big O is used to find out the scalability of our code by finding the number of steps required with number of inputs.
+
+~ Rules of Big O: 
+    1. Worst Case 
+    2. Remove constants 
+        - O(2n+3) = O(n)
+    3. Different terms for different inputs 
+        -function(array1,array2){
+            for(var i =0;i<array1.length;i++){}
+            for(var i =0;i<array2.length;i++){}
+        } //O(n+m) and not O(n+n)
+    4. Drop non-dominants 
+        - O(n^2+3n+100+n/2) = O(n^2)
+
+
+
+~ a+b vs a*b
+    - a+b for different loops 
+    - a*b for nested loops 
+
+
