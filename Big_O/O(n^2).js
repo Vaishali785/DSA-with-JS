@@ -8,4 +8,10 @@ function pairs(arr) {
 }
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8]
-pairs(array); //O(n^2)
+pairs(array);
+
+/**
+ * O(n*n) => O(n^2)  
+ * multiplication for nested loops
+ * 
+**/
