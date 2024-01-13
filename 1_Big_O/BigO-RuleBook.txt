@@ -1,6 +1,8 @@
 ~ Good code is :
     1. Readable
     2. Scalable
+        i.) Speed (Time Complexity)
+        ii.) Memory (Space Complexity)
 
 ~ Big O is used to find out the scalability of our code by finding the number of steps required with number of inputs.
 
@@ -23,3 +25,8 @@
     - a*b for nested loops 
 
 
+~ What causes Space Complexity? 
+    1. Variables 
+    2. Data Structures (like arrays,objects etc.)
+    3. Function Call 
+    4. Allocations 
