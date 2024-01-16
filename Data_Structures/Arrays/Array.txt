@@ -1,0 +1,62 @@
+~ Array organizes data sequentially.
+
+~ Operations on Arrays: 
+    1. lookup - array[index] -----> This is easy as array already knows the index of each item.
+    2. push - array.push("something") ---------> Similarly for push, adds item in the end of array.
+    3. insert - splice(2,0,"alien") ------> It has to change the indexing of whole array, which causes looping through all the items.
+        Initial array= ["a","b","c","d"]   Final array = ["a","b","c","alien","d"] 
+        Initial index=   0   1   2   3     Final Index=    0   1   2     3      4   
+    4. delete - array.unshift("x) ------> It has to change the indexing of whole array, which causes looping through all the items.
+        Initial array= ["a","b","c","d"]   Final array = ["x","a","b","c","d"] 
+        Initial index=   0   1   2   3     Final Index=    0   1   2   3   4  
+
+~ Static Arrays - arrays with defined length
+~ Dynamic Arrays - memories are allocated based on number of items we have(add)
+    In JS, we have dynamic array. 
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+~ Reference
+    var obj1 = {1,2,3};
+    var obj2 = obj1;
+    var obj3 = {1,2,3};
+
+    obj1===obj2 //true 
+    obj1 === obj3 //false
+    [] === [] //false
+    - Because objects are reference type objects in JS, everytime we create a new object, it is diff for JS. 
+
+~ Scope vs Context 
+    - Scope is function-based while Context is object-based. 
+    - Scope pertains to the variable access of a function while context is always the value of this keyword,     which is a reference to the object that owns the currently executing code.
+
+~ Instantiate
+    class Player{
+        constructor(name,type){
+            this.name = name;
+            this.type = type;
+        }
+
+        introduce(){
+            console.log(`Hi I'm ${this.name}, I'm a ${this.type}.`);
+        }
+    }
+
+    class Wizard extends Player{
+        constructor(name,type){
+            super(name,type);
+        }
+        play(){
+            console.log(`Weeeeeee, I'm ${this.type}`);
+        }
+    }
+
+const w1= new Wizard("Shelly", "Healer");
+const w2= new Wizard("Shawn", "Dark Magic");
+
+
+* Note: When asked about a string manipulation, always think about array manipulation as string is array of chars.

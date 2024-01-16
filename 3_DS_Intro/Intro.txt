@@ -1,0 +1,15 @@
+~ Data Structure is a collection of values, a way to organize our data. We can put data in it and retrieve data from it.
+There are tons of DS, some are useful for some operations and others are good for other operations.
+
+~ We have storage also (hard disk etc), but this storage is very slow and it takes a lot of time for CPU to access data from here.
+But RAM is very fast that's why our variables are stored in RAM.
+
+~ Some DS are pre-built in languages, and all the languages have different pre-built DS. But if requires some specific DS which is not already there, we can create them.
+
+~ Operations on DS:
+    1. Insertion
+    2. Deletion
+    3. Traversal 
+    4. Searching 
+    5. Sorting
+    6. Access
