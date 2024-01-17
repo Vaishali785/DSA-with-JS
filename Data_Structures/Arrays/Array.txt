@@ -10,11 +10,18 @@
         Initial array= ["a","b","c","d"]   Final array = ["x","a","b","c","d"] 
         Initial index=   0   1   2   3     Final Index=    0   1   2   3   4  
 
+
+* Advantage of Hash Tables
+    1. Lookup - O(1)
+    2. Push - O(1)
+! Disadvantages of Hash Tables 
+    1. Insertion - O(n)
+    2. Deletion - O(n)
+
+
 ~ Static Arrays - arrays with defined length
 ~ Dynamic Arrays - memories are allocated based on number of items we have(add)
     In JS, we have dynamic array. 
-
-
 
 -----------------------------------------------------------------------------------------------------------------
 
