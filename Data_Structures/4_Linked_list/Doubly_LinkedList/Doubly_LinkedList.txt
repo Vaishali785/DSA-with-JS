@@ -1,0 +1,16 @@
+Each node has two pointers - one pointing to next node and second pointing to prev node.
+
+
+        apples     grapes     pears
+              \  /       \  /
+               \/         \/
+        next --/\   next--/\    next -- null 
+null -- prev     \--prev    \ --prev   
+                                
+
+
+* Advantage 
+    We can traverse from start to end and also end to start.
+
+! Disadvantages 
+    Extra memory space
