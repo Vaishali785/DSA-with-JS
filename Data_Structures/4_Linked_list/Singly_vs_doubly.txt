@@ -1,0 +1,10 @@
+* Singly
+    1. Requires less Memory
+    2. Less Complicated 
+    3. Little faster 
+    4. Can't traverse back.
+
+* Doubly 
+    1. More Memory 
+    2. Complex 
+    3. Easy traversal from both ends 
