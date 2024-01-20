@@ -1,0 +1,66 @@
+~ JS is a single threaded language that can be non blocking. 
+~ Program = Something that allocates memory + parse and executes.
+~ JS engine that browser implements , for Chrome , it's V8 engine.
+
+
+
+         ------------------------------    
+        |     V8 engine(for Chrome)    |
+        |             |                |
+        |    Memory Heap + Call Stack  |
+          ------------------------------
+
+
+~ JS has only one call stack (many languages have multiple-> multi-threaded) , that's why JS is single threaded.
+~ JS parse the code line by line that's why it is called synchronous. 
+~ But we can also make some of the code(large blocking code) async using async/await that's why it can be non-blocking.
+
+
+
+
+
+~ In order to run JS, we need more than just JS engine, we need JS runtime environment.
+~ JS runtime environment consists of:  
+    1. JS engine
+    2. Web APIs  - DOM , AJAX(XMLHttpRequest), Timeout(setTimeout)
+    3. Callback Queue - onClick , onLoad, onDone 
+    4. Event Loop 
+
+
+ ** JS Runtime Engine
+         ------------------------------    
+        |      JavaScript Engine       | -------> Web API 
+        |             |                |                               
+        |    Memory Heap + Call Stack  | <----- Event Loop <------ Callback Queue
+          ------------------------------
+
+
+
+
+
+! For exp, we have to run this code , 
+    console.log("1");
+    setTimeout (()=> {
+        console.log("2")
+    },2000);
+    console.log("3"); 
+
+?1. console.log("1") =====> this goes to call stack of JS engine and get executes.
+?2. setTimeout =========> As it is a part of Web API so callstack will send it to web api, where it will get   executed or wait for the required time(2000ms) =====> Web API will send it to Callback Queue ========> which send it to Event Loop =========> Event Loop checks if the call stack is empty =====> if yes it will pass setTimeout callback to it and there it gets executed.
+?3. As setTimeout was sent to Web API , so callstack is empty right now, it moves to next line.
+
+
+
+! For exp, we have to run this code , what will happen in this case?
+    console.log("1");
+    setTimeout (()=> {
+        console.log("2")
+    },0);
+    console.log("3");
+* Answer
+-1
+-3
+-2
+
+
+?~ Though the time is 0 here , but it will still go through the process and therefore 2 is executed in the end.
