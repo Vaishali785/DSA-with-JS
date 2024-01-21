@@ -1,0 +1,30 @@
+* Rules of Binary Search Tree
+    1. Left means decreasing , right means increasing .
+    2.  Each node should have max of two child as it is a binary tree. 
+
+
+                                101 
+                              /     \
+                            /         \
+                          /             \
+                        33               105  
+                       /  \             /   \
+                     /      \          /      \
+                   /          \       /         \
+                  4            35    99         137 
+
+* Operations on Binary Search Tree 
+    1. Lookup - O(log n)
+    2. Insert - O(log n)
+    3. Delete - O(log n)                  
+
+?Note:- Binary Search tree is preferred until it is balanced, as it gets unbalanced all our operations turn to O(n) as an unbalanced tree is almost similar to linked list.
+
+
+* Pros  
+1. Better than O(n)
+2. Ordered
+3. Flexible Size 
+
+!Cons 
+1. It is always O(log n) and never O(1) as in arrays and other DS. 

@@ -1,0 +1,21 @@
+~ Tree has a hierarchical structure.
+~ Tree starts from a parent node and all the child nodes descends from it.
+~ Every Child has one parent node. It is unidirectional.
+
+Exp: DOM has a tree structure.
+
+
+~Binary Trees --> Each node can have 0,1,or max 2 child nodes.
+    1. Perfect Binary Tree ==> (a) Double nodes on every level 
+                               (b) Nodes in last level = All the nodes above + 1 
+    2. Full Binary Tree ==> Each node can have 0 or 2 child. 
+
+
+
+Level 0 = 2^0 = 1 node 
+Level 1 = 2^1 = 2 nodes 
+Level 2 = 2^2 = 4 nodes 
+Level 3 = 2^3 = 8 nodes 
+
+Total No. of nodes  = (2^n) - 1    ; n=total number of levels 
+log nodes = n
