@@ -19,3 +19,10 @@ Level 3 = 2^3 = 8 nodes
 
 Total No. of nodes  = (2^n) - 1    ; n=total number of levels 
 log nodes = n
+
+
+
+* Usually in production, we want our tree to be balanced. And therefore we mostly use AVL tree or Red-Black Tree.
+Resources :: 
+    1. AVL Tree - https://visualgo.net/en/bst?slide=3
+    2. Red Black Tree - https://www.cs.usfca.edu/~galles/visualization/RedBlack.html

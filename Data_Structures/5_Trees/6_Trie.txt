@@ -1,0 +1,6 @@
+~ Trie is a type of tree(tree not binary tree) and it can have as many nodes as required. 
+~ It is used in searching , most often with text.
+~ It is also called prefix tree - words with same prefix will have same parent. 
+~ It has empty root node.
+
+Time complexity - O(length of word)

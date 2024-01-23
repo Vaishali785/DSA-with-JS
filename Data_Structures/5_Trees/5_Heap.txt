@@ -1,0 +1,34 @@
+~ It is a kind of binary tree as all the parents can have max of 2 nodes. 
+~ Diff from a binary tree - In Binary Tree, there is a logic between left and right nodes, but not in heap.
+
+* Heap Type - 
+    1. Max Heap - Top value will be greatest.
+    2. Min Heap - Top value will be smallest.
+
+* Heap Rule (Max Heap) : 
+    Parent node value will be greater than its child node. 
+
+*Operations on Heap:
+    1. Lookup - O(n)
+    2. Insert - O(log n)
+    3. Delete - O(log n)
+
+
+* Benefit: 
+    Binary Heaps are good for comparative operations.
+    As they insert data from left to right, they are always balanced.
+    Priorities matter.
+
+?Note::
+    Memory Heap(as present in JS runtime environment) != Heap Data Structure
+
+
+
+======================================================================================================
+
+
+*Priority Queues - It is a diff Data structure but it is easy to implement them using binary heaps.
+    These are different from Queue, as in Queue we use FIFO, but in priority queues, priority matters and based on priority we settle nodes.
+
+Exp. of Priority Queue - 
+        Airport - there is a queue for people but if captain comes he will be allowed to go first. 
