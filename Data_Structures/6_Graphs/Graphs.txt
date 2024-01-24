@@ -1,6 +1,6 @@
-Graphs are the most useful and most used data structure for modeling real life.
-A graph is a set of values that are related in a pairwise fashion.
-Graphs have nodes(or vertices) connected by edges.
+~ Graphs are the most useful and most used data structure for modeling real life.
+~ A graph is a set of values that are related in a pairwise fashion.
+~ Graphs have nodes(or vertices) connected by edges.
 
 Exp: It can be anything. Amazon uses them for recommendation engine, Facebook for social network , Google Maps to find shortest node.
 
