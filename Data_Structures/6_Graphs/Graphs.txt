@@ -10,3 +10,9 @@ There are various ways to describe a graph:
     1. Directional & Undirectional
     2. Weighted(edges having values) & Unweighted 
     3. Cyclic(Closed) & Acyclic(Open)
+
+* Advantages 
+    1. Good in relationship
+
+! Disadvantages 
+    1. They can get pretty complicated, so scaling is hard.
