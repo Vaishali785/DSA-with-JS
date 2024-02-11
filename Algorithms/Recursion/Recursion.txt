@@ -1,0 +1,18 @@
+
+*** Recursion is not an algorithm but its a concept, a very important concept.
+1. Identify the base case (or stop point). 
+2. Identify the recursive case.
+3. Get closer and closer and return when needed. Usually you have 2 returns.
+
+* When to use Recursion? 
+~ Rule to use recursion is use recursion when you don't know how deep a DS is, when you don't know how many loops are required.
+~ Every time you are using a tree or converting something into a tree, consider recursion.
+~ Divide and Conquer using Recursion
+~ Use in sorting
+
+* Pros
+~ Keeps code DRY
+~ Readabilty 
+
+! Cons 
+~ Large stack
