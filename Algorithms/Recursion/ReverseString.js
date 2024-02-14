@@ -16,7 +16,7 @@ function reverseStringRecursive(str) {
         console.log(newStr);
         return newStr;
     }
-    // let newStr = str[str.length-1];
+    // let newStr = str[str.length - 1];
 }
 
 reverseStringRecursive("yoyo master");
