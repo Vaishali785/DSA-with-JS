@@ -4,7 +4,7 @@ class Graph {
             this.adjacentNodes = {}
     }
     addVertex(node) {
-        if (node) {
+        if (!isNaN(node)) { //otherwise 0 won't be added.
             this.adjacentNodes[node] = [];
             this.numberOfNodes++;
         }
