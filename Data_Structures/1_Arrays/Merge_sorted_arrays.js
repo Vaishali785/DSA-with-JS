@@ -22,7 +22,7 @@ function mergeSorted(arr1, arr2) {
 
 
 function mergeSorted1(arr1, arr2) {
-    if (typeof arr1 != "object" || typeof arr2 != "object") {
+    if (typeof arr1 == "object" || typeof arr2 == "object") {
         const mergedArr = arr1.concat([...arr2]);
         // console.log(mergedArr);
         console.log(mergedArr.sort((a, b) => a - b));
