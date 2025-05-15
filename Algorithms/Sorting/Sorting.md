@@ -114,6 +114,7 @@ exp:- 8 5 2 6 9 3 1 4 0 7</br>
 # Insertion Sort
 
 - It is not the most efficient algorithm but in some cases, it is extremely fast
+- Checks if next element is smaller than previous, if yes checks where to put it into the array.
 
 exp:- 6 5 3 1 8 7 2 4</br>
 
@@ -126,4 +127,25 @@ exp:- 6 5 3 1 8 7 2 4</br>
     - 1 3 5 6 7 8 | `2` 4
     - 1 2 3 5 6 7 8 | `4`
     - 1 2 3 4 5 6 7 8 |
+</pre>
+
+# Merge Sort
+
+- It uses divide & conquer rule.
+- Splits array in half and then half them until you get o=single element, and then compares them.
+- This is better because you dont need to compare all elements with all other elements (as in the other sorting algos).
+- It's time complexity is O(n logn)
+
+Exp:- 6 5 3 1 8 7 2 4</br>
+; | represents the splitting of array</br>
+
+<pre>
+    - 6 5 3 1   |  8 7 2 4
+    - 6 5 | 3 1 | 8 7 | 2 4
+    - 6 | 5    3 | 1    8 | 7    2 | 4
+    // Sorting each group
+    - 5 | 6    1 | 3    7 | 8    2 | 4
+    // Sorting first two groups -> 5 and 1, 5 and 3
+    - 1 3 5 6  |  2 4 7 8
+    - 1 2 3 4 5 6 7 8
 </pre>
